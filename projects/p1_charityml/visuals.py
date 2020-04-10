@@ -115,6 +115,7 @@ def evaluate(results, accuracy, f1):
     
     # Aesthetics
     pl.suptitle("Performance Metrics for Three Supervised Learning Models", fontsize = 16, y = 1.10)
+    #pl.subplots_adjust(wspace=0.4, hspace=0.35)
     pl.tight_layout()
     pl.show()
     
@@ -139,5 +140,5 @@ def feature_plot(importances, X_train, y_train):
     pl.xlabel("Feature", fontsize = 12)
     
     pl.legend(loc = 'upper center')
-    pl.tight_layout()
+    pl.subplots_adjust(wspace=0.4, hspace=0.35)
     pl.show()  
